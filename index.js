@@ -7,7 +7,7 @@ let dom = ""
 for (let user of userData) {
     dom += `
         <section class="card container">
-            <div class="user-info">
+            <div class="user-info flex">
                 <img class="user-img navbar-img" src="${user["profile-pic"]}" alt="${user.name} + ''s profile picture'">
                 <div>
                     <p class="user-name">${user.name}</p>
@@ -15,12 +15,12 @@ for (let user of userData) {
                 </div>
             </div>
 
-            <div>
-                <img class="container" src="${user.post}" alt="${user.name} + ''s post'">
+            <div class="post">
+                <img class="container post" src="${user.post}" alt="${user.name} + ''s post'">
             </div>
 
-            <div>
-                <div class="like-comment-share">
+            <div class="like-comment-share">
+                <div>
                     <img class="icon" src="images/icon-heart.png" alt="like button">
                     <img class="icon" src="images/icon-comment.png" alt="comment button">
                     <img class="icon" src="images/icon-dm.png" alt="share button">
@@ -28,7 +28,7 @@ for (let user of userData) {
                 <div>
                     <p class="likes">${user.likes} likes</p>
                 </div>
-                <div class="comment">
+                <div class="comment flex">
                     <p class="likes">${user.friend}</p>
                     <p class="likes comment-msg">${userData[0].comment}</p>
                 </div>

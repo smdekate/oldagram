@@ -3,16 +3,22 @@ body {
     margin: 0;
 }
 
+.flex {
+    display: flex;
+}
+
 .container {
     width: 375px;
-    margin: 20px auto;
+    margin: 0 auto 20px auto;
+}
+
+#container {
+    margin-bottom: 0;
 }
 
 .navbar {
-    display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #C6C6C6;
-    padding-bottom: 5px;
 }
 
 .navbar-img {
@@ -24,19 +30,26 @@ body {
     width: 130px;
 }
 
+.main {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    margin-top: 0;
+    padding: 5px 0;
+    background-color: white;
+}
+
 .user-img {
     border-radius: 50%;
     width: 34px;
     height: 34px;
 }
 
-.main {
-    display: flex;
-    flex-direction: column;
-}
-
 .user-info {
-    display: flex;
+    padding: 5px;
+    margin: 0;
 }
 
 .user-info  p {
@@ -48,6 +61,14 @@ body {
     font-weight: 700;
 }
 
+.post {
+    margin: 0;
+}
+
+.like-comment-share {
+    margin: 5px auto;
+}
+
 .icon {
     width: 22.5px;
     height: 22.5px;
@@ -57,11 +78,10 @@ body {
 .likes {
     font-weight: 700;
     font-size: small;
-    margin: 5px;
+    margin: 2px 5px;
 }
 
 .comment {
-    display: flex;
     font-weight: 400;
 }
 
