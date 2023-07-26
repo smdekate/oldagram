@@ -29,3 +29,43 @@ body {
     width: 34px;
     height: 34px;
 }
+
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-info {
+    display: flex;
+}
+
+.user-info  p {
+    margin: 0 10px;
+    font-size: small;
+}
+
+.user-name {
+    font-weight: 700;
+}
+
+.icon {
+    width: 22.5px;
+    height: 22.5px;
+    margin: 0 5px;
+}
+
+.likes {
+    font-weight: 700;
+    font-size: small;
+    margin: 5px;
+}
+
+.comment {
+    display: flex;
+    font-weight: 400;
+}
+
+.comment-msg {
+    margin-left: 0;
+    font-weight: 400;
+}
