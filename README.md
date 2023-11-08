@@ -1,3 +1,3 @@
 # oldagram
 ## mini frontend project with simple HTML CSS and JS
-## site: https://old-instagram.netlify.app
+<a href="https://old-instagram.netlify.app">visit site</a>
